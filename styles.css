@@ -793,7 +793,7 @@ text-decoration-skip-ink: none;
 .what-you-get-p{
 font-family: Montserrat;
 /* font-size: 32px; */
-font-size: clamp(12px, 3vw, 32px); 
+font-size: clamp(12px, 4vw, 32px); 
 font-style: italic;
 font-weight: 500;
 line-height: 45px;
