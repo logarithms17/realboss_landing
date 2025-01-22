@@ -17,10 +17,431 @@ li{
 
 
 .container{
-    width: 1440px;
         margin: 0 auto;
-        padding: 0 160px;
 }
+
+/* ------------------------------------ -------------------------------------------- */
+
+@media (max-width: 920px) {
+    .what-you-get-list{
+        flex-direction: column;
+    }
+
+    .whose-behind-list ul{
+        display: flex;
+        flex-direction: column;
+}
+
+    .contact-information{
+        flex-direction: row;
+        gap: 20px;
+        height: auto;
+        padding: 20px 20px;
+    }
+}
+
+
+/* ------------------------------------MOBILE VIEW --------------------------------------------*/
+
+
+@media (max-width: 767px) {
+    .container{
+        min-width: 320px;
+        padding: 0 20px;
+    }
+
+    .ryan-img, .alex-img, .vince-img, .polygon-img, .polygon2-img, .line-1, .line-2, .line-3, .line-4, .line-5, .line-6{
+        visibility: hidden;
+}
+
+    header nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .header-background button{
+        width: 100%;
+    }
+
+    /* WHOSE BEHIND */
+
+    .whose-behind{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .whose-behind-header{
+        text-align: center;
+    }
+
+    .whose-behind-p{
+        text-align: center;
+    }
+
+    /* HOW IT WORKS */
+
+    .how-it-works-item img{
+    width: 300px;
+}
+    .how-it-works-item{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+
+    .reverse{
+        flex-direction: column-reverse;
+    }
+
+    /* GET STARTED */
+
+    .get-started button{
+        width: 100%;
+}
+
+/* FEATURES */
+
+    .features-list{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features-item-content{
+        max-width: 380px;
+    }
+
+    /* TESTIMONIALS */
+
+    .testimonials-item{
+            padding: 30px 40px 50px 30px;
+    }
+
+    .testimonials-item-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+    .testimonials-item-quote{
+        width: 100%;
+    }
+
+    /* PRICING */
+
+    .pricing-content{
+        flex-direction: column;
+    }
+
+    /* CONTACT */
+
+    .contact .primary-button{
+        width: 100%;
+    }
+
+    .contact-information ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* WHY US */
+
+    .why-us-list{
+        flex-direction: column;
+    }
+
+    .why-us button{
+        width: 100%;
+}
+
+    
+}
+
+/* ------------------------------------TABLET VIEW --------------------------------------------*/
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .container{
+        min-width: 768px;
+        padding: 0 50px;
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .header-background button{
+        width: 228px;
+    }
+
+    .ryan-img, .alex-img, .vince-img, .polygon-img, .polygon2-img, .line-1, .line-2, .line-3, .line-4, .line-5, .line-6{
+        visibility: hidden;
+}
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero button{
+    width: 295px;
+}
+
+.whose-behind{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .whose-behind-header{
+        text-align: center;
+    }
+
+    .whose-behind-p{
+        text-align: center;
+    }
+
+    /* HOW IT WORKS */
+
+    .how-it-works-item img{
+    width: 350px;
+}
+
+    .how-it-works-item{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .how-it-works-item img{
+    width: 400px;
+}
+
+/* FEATURES */
+
+    .features-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .features-item-content{
+            max-width: 256px;
+    }
+
+    
+    .testimonials-item{
+            padding: 47px 50px 90px 51px;
+    }
+
+    .testimonials-item-content{
+    display: flex;
+    gap: 20px;
+}
+
+    .testimonials-item-quote{
+        width: 442px;
+    }
+
+    /* PRICING */
+
+    .pricing-content{
+        flex-direction: row;
+    }
+
+    /* CONTACT */
+
+    .contact .primary-button{
+        width: 359px;
+    }
+
+    .contact-information{
+        gap: 50px;
+                    padding: 30px 43px;
+    }
+
+    /* WHY US */
+
+    .why-us-list{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+    .why-us button{
+        width: 359px;
+}
+
+    
+} 
+
+/* ------------------------------------DESKTOP VIEW --------------------------------------------*/
+
+@media (min-width: 1280px) {
+    .container{
+            width: 1280px;
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    /* header .primary-button{
+        width: 100%;
+    } */
+
+    .ryan-img, .alex-img, .vince-img, .polygon-img, .polygon2-img, .line-1, .line-2, .line-3, .line-4, .line-5, .line-6{
+        visibility: visible;
+    }
+
+    .hero{
+        width: 461px;
+        align-items: flex-start;
+    }
+
+    .hero h1{
+        text-align: left;
+    }
+
+    .hero p{
+        text-align: left;
+    }
+
+    .hero button{
+    width: 295px;
+}
+
+    /* WHAT YOU GET */
+
+    .what-you-get-list{
+            flex-direction: row;
+    }
+
+    h2{
+        max-width: 808px;
+    }
+
+    /* WHOSE BEHIND */
+
+    .whose-behind{
+        flex-direction: row;
+    }
+
+    .whose-behind-header{
+        text-align: left;
+        width: 255px;
+    }
+
+    .whose-behind-p{
+        text-align: left;
+        width: 195px;
+    }
+
+    /* HOW IT WORKS */
+
+    .how-it-works-item img{
+    width: 544px;
+}
+    .how-it-works-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 90px;
+}
+
+    /* FEATURES */
+
+    .features-list{
+        flex-direction: row;
+    }
+
+    .features-item-content{
+            max-width: 256px;
+    }
+
+    /* TESTIMONIALS */
+
+    .testimonials-item{
+            padding: 47px 50px 90px 51px;
+    }
+
+    .testimonials-item-content{
+    display: flex;
+    gap: 20px;
+}
+    .testimonials-item-content h3{
+        text-align: left;
+    }
+
+    .testimonials-item-content p{
+        text-align: left;
+    }
+
+    .testimonials-item-quote{
+        width: 442px;
+    }
+
+    /* PRICING */
+
+    .pricing-content{
+        flex-direction: row;
+    }
+
+    /* CONTACT */
+
+    .contact .primary-button{
+        width: 359px;
+    }
+
+    .contact-information{
+        flex-direction: row;
+        gap: 50px;
+            padding: 59px 43px;
+    }
+
+    .contact-information ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+    /* WHY US */
+
+    .why-us-list{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+    .why-us-checklist{
+            align-items: center;
+    }
+    
+    .why-us button{
+        width: 359px;
+}
+    
+}
+
+
 
 a{
     cursor: pointer;
@@ -29,6 +450,7 @@ a{
 h2{
     font-family: Montserrat;
 font-size: 36px;
+font-size: clamp(0px, 5vw, 36px); 
 font-weight: 700;
 line-height: 45px;
 text-align: center;
@@ -40,7 +462,6 @@ text-decoration-skip-ink: none;
 nav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .header-background{
@@ -60,7 +481,7 @@ nav{
     color: white;
     box-shadow: 0px 4px 10px 0px #00000026;
     font-family: Montserrat;
-font-size: 18px;
+font-size: clamp(0px, 3vw, 18px);
 font-weight: 700;
 line-height: 21.94px;
 text-underline-position: from-font;
@@ -265,15 +686,13 @@ left: 90px;
     display: flex;
     flex-direction: column;
     gap: 35px;
-
 }
 
 h1{
     font-family: Montserrat;
-font-size: 48px;
+font-size: clamp(12px, 5vw, 48px); 
 font-weight: 700;
 line-height: 54.24px;
-text-align: left;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
 color: white;
@@ -286,14 +705,15 @@ h1 span{
 
 .hero p{
     font-family: Montserrat;
-font-size: 23px;
+font-size: clamp(0px, 3vw, 23px); 
 font-weight: 400;
 line-height: 31px;
-text-align: left;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
 color: white;
 }
+
+
 
 /* WHAT YOU GET */
 
@@ -307,10 +727,23 @@ color: white;
     gap: 32px;
 }
 
+.what-you-get .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.what-you-get-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .what-you-get-list{
     display: flex;
-    flex-direction: row;
+
     gap: 30px;
+    /* flex-wrap: wrap; */
 }
 
 .what-you-get-list li{
@@ -322,7 +755,7 @@ color: white;
     background-color: white;
     border-radius: 10px;
     padding: 62px 56px 60px 56px;
-    width: 352px;
+    /* width: 352px; */
 }
 .what-you-get-list li div{
     display: flex;
@@ -338,7 +771,7 @@ color: white;
 
 .what-you-get-list p{
     font-family: Montserrat;
-font-size: 18px;
+font-size: clamp(0px, 4vw, 18px);
 font-weight: 400;
 line-height: 24px;
 text-align: center;
@@ -348,7 +781,7 @@ text-decoration-skip-ink: none;
 
 h3{
     font-family: Montserrat;
-font-size: 26px;
+font-size: clamp(12px, 3vw, 26px);
 font-weight: 600;
 line-height: 35px;
 text-align: center;
@@ -359,7 +792,8 @@ text-decoration-skip-ink: none;
 
 .what-you-get-p{
 font-family: Montserrat;
-font-size: 32px;
+/* font-size: 32px; */
+font-size: clamp(12px, 3vw, 32px); 
 font-style: italic;
 font-weight: 500;
 line-height: 45px;
@@ -386,6 +820,7 @@ text-decoration-skip-ink: none;
 .what-you-gain {
     font-family: Montserrat;
 font-size: 28px;
+font-size: clamp(12px, 3vw, 28px);
 font-weight: 500;
 line-height: 45px;
 text-align: center;
@@ -397,7 +832,6 @@ text-decoration-skip-ink: none;
 
 .whose-behind{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     gap: 30px;
     padding-top: 72px;
@@ -416,7 +850,7 @@ text-decoration-skip-ink: none;
 font-size: 32px;
 font-weight: 700;
 line-height: 38px;
-text-align: left;
+
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
 
@@ -431,10 +865,10 @@ text-decoration-skip-ink: none;
 font-size: 18px;
 font-weight: 400;
 line-height: 22px;
-text-align: left;
+
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
-width: 195px;
+
 }
 
 .whose-behind-p span{
@@ -443,7 +877,7 @@ width: 195px;
 
 .whose-behind-list ul{
     display: flex;
-    flex-direction: row;
+
     gap: 30px;
 }
 
@@ -529,19 +963,13 @@ background-color: #F4F7FA;
     color: #0A66C2;
 }
 
-.how-it-works-item{
-    display: flex;
-    justify-content: space-between;
-    gap: 90px;
-}
 
-.how-it-works-item img{
-    width: 544px;
-}
+
+
 
 .how-it-works-title{
     font-family: Montserrat;
-font-size: 30px;
+font-size: clamp(12px, 4vw, 30px);
 font-weight: 600;
 line-height: 35px;
 text-align: left;
@@ -602,7 +1030,7 @@ text-decoration-skip-ink: none;
 
 .get-started p{
     font-family: Montserrat;
-    font-size: 36px;
+    font-size: clamp(12px, 4vw, 36px);
     font-weight: 500;
     line-height: 40.68px;
     text-align: center;
@@ -613,7 +1041,7 @@ text-decoration-skip-ink: none;
 
 .get-started h2{
     font-family: Montserrat;
-    font-size: 48px;
+    font-size: clamp(12px, 4vw, 48px);
     font-weight: 700;
     line-height: 54.24px;
     text-align: center;
@@ -646,7 +1074,7 @@ text-decoration-skip-ink: none;
 
 .features-header h2{
     font-family: Montserrat;
-font-size: 36px;
+font-size: clamp(12px, 5vw, 36px);
 font-weight: 700;
 line-height: 45px;
 text-align: center;
@@ -656,7 +1084,7 @@ text-decoration-skip-ink: none;
 
 .features-header p{
     font-family: Montserrat;
-font-size: 32px;
+font-size: clamp(12px, 5vw, 32px);
 font-style: italic;
 font-weight: 500;
 line-height: 45px;
@@ -668,13 +1096,11 @@ color: #01BAF4;
 
 .features-list{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    /* flex-wrap: wrap; */
     gap: 30px;
 }
 
-/* .features-item{
-    width: 256px;
-} */
 
 .features-item-content{
     display: flex;
@@ -682,17 +1108,17 @@ color: #01BAF4;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    width: 256px;
+
     border-radius: 10px;
     background-color: white;
     box-shadow: 0px 0px 10px 5px #00000005;
     padding: 57px 25px 57px 25px;
-
+    height: 340px;
 }
 
 .features-item-content h3{
     font-family: Montserrat;
-font-size: 22px;
+font-size: clamp(12px, 5vw, 22px);
 font-weight: 600;
 line-height: 30px;
 text-align: center;
@@ -702,7 +1128,7 @@ text-decoration-skip-ink: none;
 
 .features-item-content p{
 font-family: Montserrat;
-font-size: 18px;
+font-size: clamp(12px, 4vw, 18px);
 font-weight: 400;
 line-height: 24px;
 text-align: center;
@@ -723,17 +1149,19 @@ text-decoration-skip-ink: none;
 
 .testimonials h3{
 font-family: Montserrat;
-font-size: 36px;
+font-size: clamp(12px, 5vw, 36px);
 font-weight: 700;
 line-height: 45px;
 text-align: center;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
 }
-.testimonials-list{
+.testimonials-list {
     display: flex;
-
     gap: 32px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .testimonials-item{
@@ -741,23 +1169,20 @@ text-decoration-skip-ink: none;
     background-color: white;
     box-shadow: 0px 0px 10px 5px #0000001A;
     border-top: 8px solid #11C6FF;
-    padding: 47px 50px 90px 51px;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    /* width: 100%; */
 }
 
-.testimonials-item-content{
-    display: flex;
-    gap: 20px;
-}
+
 
 .testimonials-item-content h3{
     font-family: Inter;
 font-size: 24px;
 font-weight: 700;
 line-height: 23.52px;
-text-align: left;
+
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
 }
@@ -768,7 +1193,7 @@ font-size: 16px;
 font-style: italic;
 font-weight: 300;
 line-height: 22.88px;
-text-align: left;
+
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
 }
@@ -779,13 +1204,13 @@ text-decoration-skip-ink: none;
 
 .testimonials-item-quote{
     font-family: Inter;
-font-size: 20px;
+font-size: clamp(12px, 4vw, 20px);
 font-weight: 400;
 line-height: 28.6px;
 text-align: left;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
-width: 442px;
+
 }
 
 .testimonials-dots{
@@ -804,7 +1229,7 @@ width: 442px;
 
 .pricing h2{
     font-family: Montserrat;
-font-size: 36px;
+font-size: clamp(12px, 5vw, 36px);
 font-weight: 700;
 line-height: 45px;
 text-align: center;
@@ -825,7 +1250,7 @@ color:white;
     align-items: center;
     color: white;
     border: 1px solid white;
-    width: 544px;
+    width: 100%;
     border-radius: 10px;
     padding-top: 26px;
     padding-bottom: 35px;
@@ -834,7 +1259,7 @@ color:white;
 
 .pricing-content-item h3{
     font-family: Montserrat;
-font-size: 31px;
+font-size: clamp(12px, 5vw, 31px);
 font-style: italic;
 font-weight: 600;
 line-height: 30px;
@@ -846,7 +1271,7 @@ color: #98CBFF;
 
 sup{
     font-family: Montserrat;
-font-size: 16px;
+font-size: clamp(12px, 3vw, 16px);
 font-weight: 600;
 line-height: 30px;
 text-align: center;
@@ -858,12 +1283,13 @@ color: #0A66C2;
 .pricing-content{
     display: flex;
     gap: 32px;
+    width: 100%;
     
 }
 
 .pricing-content p{
     font-family: Montserrat;
-font-size: 22px;
+font-size: clamp(12px, 3vw, 22px);
 font-weight: 600;
 line-height: 30px;
 text-align: center;
@@ -879,7 +1305,7 @@ text-decoration-skip-ink: none;
 .realboss p{
     color: #464646;
     font-family: Montserrat;
-font-size: 22px;
+font-size: clamp(12px, 3vw, 22px);
 font-weight: 600;
 line-height: 30px;
 text-align: center;
@@ -890,7 +1316,7 @@ text-decoration-skip-ink: none;
 
 .realboss h2{
     font-family: Montserrat;
-font-size: 40px;
+font-size: clamp(12px, 5vw, 40px);
 font-weight: 900;
 line-height: 30px;
 text-align: center;
@@ -912,7 +1338,7 @@ color: #0A66C2;
 
 .pricing-quote{
     font-family: Montserrat;
-font-size: 22px;
+font-size: clamp(12px, 3vw, 22px);
 font-style: italic;
 font-weight: 500;
 line-height: 30px;
@@ -952,22 +1378,17 @@ color: white;
     position: absolute;
     top: 280px;
 
-    width: 1120px;
-    height: 198px;
+    max-width: 1120px;
+    /* height: 198px; */
     align-items: center;
     justify-content: space-between;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 5px #00000008;
-    padding: 0 43px;
+
     z-index: 100;
 }
 
-.contact-information ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
-}
+
 
 .contact-information li{
     display: flex;
@@ -978,7 +1399,7 @@ color: white;
 
 .contact-information h3{
     font-family: Montserrat;
-font-size: 36px;
+font-size: clamp(12px, 5vw, 36px);
 font-weight: 700;
 line-height: 40px;
 text-align: left;
@@ -989,7 +1410,7 @@ text-decoration-skip-ink: none;
 
 .contact-information p{
     font-family: Montserrat;
-font-size: 18px;
+font-size: clamp(12px, 3vw, 18px);
 font-weight: 400;
 line-height: 30px;
 text-align: left;
@@ -1017,7 +1438,7 @@ text-decoration-skip-ink: none;
 
 .why-us h2{
     font-family: Montserrat;
-font-size: 36px;
+font-size: clamp(12px, 5vw, 36px);
 font-weight: 700;
 line-height: 45px;
 text-align: center;
@@ -1026,11 +1447,7 @@ text-decoration-skip-ink: none;
 
 }
 
-.why-us-list{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
+
 
 .why-us-list li{
     width: 288px;
@@ -1046,13 +1463,25 @@ text-decoration-skip-ink: none;
 .why-us-checklist{
     display: flex;
     flex-direction: column;
-    align-items: center;
+
     gap: 20px;
 }
 
 .why-us-checklist li{
     display: flex;
 }
+
+.why-us-checklist li p{
+    font-family: Montserrat;
+font-size: clamp(12px, 3vw, 18px);
+font-weight: 600;
+line-height: 30px;
+/* text-align: center; */
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+}
+
+
 
 .plus-icon{
     position: absolute;
@@ -1064,6 +1493,10 @@ text-decoration-skip-ink: none;
     position: absolute;
     top: 160px;
     left: 910px;
+}
+
+.symbols{
+    background-color: #F4F7FA;
 }
 
 .union-bg{
